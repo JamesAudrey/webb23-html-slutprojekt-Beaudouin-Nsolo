@@ -1,0 +1,248 @@
+body {
+  margin: 0;
+  background-image: url("../bilder/sushi-set-philadelphia-crab-maki-california-cappa-maki-ginger-wasabi-top-view.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  font-family: "Josefin Sans", sans-serif;
+  background-color: whitesmoke;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.topnavbar {
+  overflow: hidden;
+  background-color: black;
+  border: 5px solid #353b48;
+  border-radius: 3px;
+}
+
+.topnavbar a {
+  float: left;
+  color: white;
+  padding: 15px 30px;
+  text-decoration: none;
+  font-size: 23px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 3px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.topnavbar a:hover {
+  background-color: whitesmoke;
+  color: black;
+}
+
+.topnavbar a.active {
+  background-color: limegreen;
+  color: white;
+}
+
+.rubrik {
+  color: white;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+#info1 {
+  border: 5px solid whitesmoke;
+  margin-left: 480px;
+  margin-right: 400px;
+  margin-top: 150px;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #130f40;
+}
+
+.rubrik1 {
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+}
+
+#info-text {
+  color: whitesmoke;
+  padding-bottom: 20px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.flex-container {
+  display: flex;
+  background-color: #130f40;
+  margin-top: 50px;
+}
+
+.flex-container > div {
+  margin: 20px;
+  padding: 50px;
+  font-size: 30px;
+  border: 5px solid white;
+  border-radius: 1px;
+  margin-bottom: 30px;
+}
+
+#bild1 {
+  background-image: url("../bilder/boka-bord.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 190px;
+}
+
+#text1 {
+  color: whitesmoke;
+  background-color: #1e272e;
+  text-align: center;
+  padding-top: 80px;
+}
+
+.text-size {
+  font-size: 28px;
+}
+
+.text-size1 {
+  font-size: 20;
+  visibility: hidden;
+}
+
+#hemsida-kod {
+  color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto;
+  gap: 10px;
+  background-color: black;
+  padding: 10px;
+  margin-top: 15px;
+  margin-bottom: 90px;
+  margin-right: 90px;
+  margin-left: 90px;
+}
+
+.grid-container > div {
+  background-color: whitesmoke;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+
+#grid-text1 {
+  font-size: 25px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 50px;
+  background-color: #130f40;
+  color: whitesmoke;
+  padding-top: 100px;
+}
+
+#grid-text2 {
+  font-size: 25px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #130f40;
+  color: whitesmoke;
+  padding-top: 100px;
+}
+
+#grid-text3 {
+  font-size: 25px;
+  text-align: center;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #130f40;
+  color: whitesmoke;
+  padding-top: 100px;
+}
+
+#grid-bild1 {
+  background-image: url("../bilder/saiki.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+#grid-bild2 {
+  background-image: url("../bilder/fujitsu.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+#grid-bild3 {
+  background-image: url("../bilder/osaka.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 250px;
+}
+
+.text-remove {
+  visibility: hidden;
+}
+
+#header1 {
+  color: whitesmoke;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.button {
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-size: 23px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #04aa6d;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px white;
+  margin-left: 510px;
+  margin-right: 510px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 3px #666;
+    transform: translateY(4px);
+  }
+
+.link{
+    text-decoration: none;
+}
+
+.miniprojekt1{
+    margin-left: 350px;
+    margin-top: 50px;
+    border-radius: 5px;
+
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 95, 5%;
+  background-color: black;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+#footer-text {
+  font-size: 30px;
+  margin-bottom: 10px;
+}

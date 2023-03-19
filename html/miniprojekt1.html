@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="sushi" content="zushi, en lokal restaurang i malmo" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!--Restaurangens logo funkade inte för den är vit så använt en annan favicon-->
+    <link rel="icon" href="../bilder/Sushi-Malmo.jpg" />
+    <style>
+      div.gallery {
+        border: 5px solid whitesmoke;
+        border-radius: 5px;
+      }
+
+      div.gallery:hover {
+        border: 5px solid limegreen;
+        border-radius: 5px;
+      }
+
+      div.gallery img {
+        width: 100%;
+        height: auto;
+      }
+
+      div.desc {
+        padding: 15px;
+        text-align: center;
+        background-color: white;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .responsive {
+        padding: 0 8px;
+        float: left;
+        width: 24.99999%;
+        margin-top: 100px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        .responsive {
+          width: 49.99999%;
+          margin: 6px 0;
+        }
+      }
+
+      @media only screen and (max-width: 500px) {
+        .responsive {
+          width: 100%;
+        }
+      }
+
+      .clearfix:after {
+        content: "";
+        display: table;
+        clear: both;
+      }
+
+      #text1 {
+        color: whitesmoke;
+        background-color: #1e272e;
+        text-align: center;
+        margin-left: 150px;
+        margin-right: 150px;
+      }
+
+      .text-size {
+        font-size: 25px;
+      }
+
+    </style>
+    <title>Zushi</title>
+  </head>
+  <body>
+    <header>
+      <!--Navbaren ska vara här med länkar till andra sidorna-->
+      <div class="topnavbar">
+        <a href="index.html">Startsidan</a>
+        <a  class="active" href="#">Miniprojekt 1</a>
+        <a href="miniprojekt2.html">Miniprojekt 2</a>
+        <a href="miniprojekt3.html">Miniprojekt 3</a>
+        <a href="miniprojekt4.html">Miniprojekt 4</a>
+        <a href="om-mig.html">Om mig</a>
+      </div>
+    </header>
+
+    <main>
+      <h1 class="rubrik1">Miniprojektet 1 - Profil </h1>
+      <img src="../bilder/minirprojek1-bild.JPG" alt="miniprojektet1" class="miniprojekt1" 
+      width="auto" height="500">
+      <div class="flex-container">
+        <div id="text1">
+          <p class="text-size">
+            Här går det att hitta alla sorters projekter och ytterligare mer
+            information om mig och andra framtida arbete
+          </p>
+          <a class="link" href="om-mig.html"><div class="button">Om Mig</div></a>
+        </div>
+      </div>
+  
+
+    </main>
+
+    <footer>
+      <p id="footer-text">James Portfolio</p>
+      <adress
+        >Adress: Drottningtorget 4, Telefon: 040212880, E-post:
+        <strong>test@mail.se</strong> Hemsida:
+        <a id="hemsida-kod" href="#">Test Hemsida</a>
+        <br />
+        <a href="#"
+          ><img src="../bilder/icons8-facebook-48.png" alt="facebook"
+        /></a>
+        <a href="#"
+          ><img src="../bilder/icons8-instagram-48.png" alt="facebook"
+        /></a>
+      </adress>
+    </footer>
+  </body>
+</html>
