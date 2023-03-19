@@ -78,15 +78,56 @@
         font-size: 25px;
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: black;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 90px;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 5px;
+      }
+
+      .grid-container > div {
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      #grid-bild1 {
+        background-image: url("../bilder/minirprojek1-bild.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+      }
+
+      #grid-bild2 {
+        background-image: url("../bilder/miniprojekt1-bild2.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+      }
+
+      #grid-bild3 {
+        background-image: url("../bilder/miniprojekt-bild3.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 250px;
+      }
     </style>
-    <title>Zushi</title>
+    <title>Min Portfolio</title>
   </head>
   <body>
     <header>
       <!--Navbaren ska vara här med länkar till andra sidorna-->
-      <div class="topnavbar">
+      <div class="topnavbar" id="myTopnav">
         <a href="index.html">Startsidan</a>
-        <a  class="active" href="#">Miniprojekt 1</a>
+        <a class="active" href="#">Miniprojekt 1</a>
         <a href="miniprojekt2.html">Miniprojekt 2</a>
         <a href="miniprojekt3.html">Miniprojekt 3</a>
         <a href="miniprojekt4.html">Miniprojekt 4</a>
@@ -95,20 +136,37 @@
     </header>
 
     <main>
-      <h1 class="rubrik1">Miniprojektet 1 - Profil </h1>
-      <img src="../bilder/minirprojek1-bild.JPG" alt="miniprojektet1" class="miniprojekt1" 
-      width="auto" height="500">
+      <h1 class="rubrik1">Miniprojektet 1 - Profil</h1>
+      <img
+        src="../bilder/minirprojek1-bild.JPG"
+        alt="miniprojektet1"
+        class="miniprojekt1"
+        width="auto"
+        height="500"
+      />
+
+      <div class="grid-container">
+        <div id="grid-bild1"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
+        <div id="grid-bild2"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
+        <div id="grid-bild3"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
+      </div>
+
       <div class="flex-container">
         <div id="text1">
           <p class="text-size">
-            Här går det att hitta alla sorters projekter och ytterligare mer
-            information om mig och andra framtida arbete
+            Miniprojektet uppgiften handlar om att presentera mig själv genom att ha en 
+            inspirations sida och en kontaktsida. Där syns lite fakta om mig och vad jag gillar att
+            göra på fritiden samt vilken inspiration (i detta fallet League of Legends) vill jag låta besökarna
+            få reda på. Hemsidan består av en startsida där man kan hitta en avatar, information och citat jag vill dela av mig.
+
+            I inpirations sidan kan man hitta information om mitt hobby/vad som jag tycker för spel och externa
+            länkar till respektiva sidorna.
+
+            Till sist i kontakt sidan kan man hitta en liten formulär där man kan skriva in sitt
+            namn, ange e-mail och vad man vill få reda på. Sedan kan man skicka in allt.
           </p>
-          <a class="link" href="om-mig.html"><div class="button">Om Mig</div></a>
         </div>
       </div>
-  
-
     </main>
 
     <footer>
@@ -126,5 +184,6 @@
         /></a>
       </adress>
     </footer>
+
   </body>
 </html>

@@ -78,91 +78,93 @@
         font-size: 25px;
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: black;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 90px;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 5px;
+      }
+
+      .grid-container > div {
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      #grid-bild1 {
+        background-image: url("../bilder/bild1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+      }
+
+      #grid-bild2 {
+        background-image: url("../bilder/bild1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+      }
+
+      #grid-bild3 {
+        background-image: url("../bilder/bild1.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 250px;
+      }
     </style>
-    <title>Zushi</title>
+    <title>Min Portfolio</title>
   </head>
   <body>
     <header>
       <!--Navbaren ska vara här med länkar till andra sidorna-->
-      <div class="topnavbar">
+      <div class="topnavbar" id="myTopnav">
         <a href="index.html">Startsidan</a>
         <a href="miniprojekt1.html">Miniprojekt 1</a>
         <a href="miniprojekt2.html">Miniprojekt 2</a>
-        <a class="active"  href="#">Miniprojekt 3</a>
+        <a class="active" href="#">Miniprojekt 3</a>
         <a href="miniprojekt4.html">Miniprojekt 4</a>
         <a href="om-mig.html">Om mig</a>
       </div>
     </header>
+
     <main>
-      <!--Responsiva bild galleri-->
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt1.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Cinque Terre"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc"><h3>Miniprojekt 1 information</h3></div>
-        </div>
+      <h1 class="rubrik1">Miniprojektet 3 - Lorem Ipsum Dolor</h1>
+      <img
+        src="../bilder/bild1.jpg"
+        alt="miniprojektet1"
+        class="miniprojekt1"
+        width="auto"
+        height="500"
+      />
+
+      <div class="grid-container">
+        <div id="grid-bild1"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
+        <div id="grid-bild2"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
+        <div id="grid-bild3"><p class="text-remove">sdffsffdsdfsffdsf</p></div>
       </div>
 
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt2.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Forest"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 2 information</div>
+      <div class="flex-container">
+        <div id="text1">
+          <p class="text-size">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat. Duis aute irure dolor in
+            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+            culpa qui officia deserunt mollit anim id est laborum
+          </p>
         </div>
       </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt3.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Northern Lights"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 3 information</div>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt4.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Mountains"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 4 information</div>
-        </div>
-      </div>
-
-      <div class="clearfix"></div>
     </main>
-
-    <div class="flex-container">
-      <div id="text1">
-        <p class="text-size">
-          Här går det att hitta alla sorters projekter och ytterligare mer
-          information om mig och andra framtida arbete
-        </p>
-        <a class="link" href="om-mig.html"><div class="button">Om Mig</div></a>
-      </div>
-    </div>
 
     <footer>
       <p id="footer-text">James Portfolio</p>
@@ -179,5 +181,6 @@
         /></a>
       </adress>
     </footer>
+
   </body>
 </html>

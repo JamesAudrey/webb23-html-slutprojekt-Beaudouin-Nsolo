@@ -78,13 +78,59 @@
         font-size: 25px;
       }
 
+      .grid-container {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: black;
+        padding: 10px;
+        margin-top: 15px;
+        margin-bottom: 90px;
+        margin-right: 30px;
+        margin-left: 30px;
+        border-radius: 5px;
+      }
+
+      .grid-container > div {
+        background-color: whitesmoke;
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px;
+      }
+
+      #grid-bild1 {
+        background-image: url("../bilder/minirprojek1-bild.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+      }
+
+      #grid-bild2 {
+        background-image: url("../bilder/miniprojekt1-bild2.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+      }
+
+      #grid-bild3 {
+        background-image: url("../bilder/miniprojekt-bild3.JPG");
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+      }
+
+      .miniprojekt1 {
+        width: 100%;
+        height: auto;
+      }
     </style>
-    <title>Zushi</title>
+    <title>Min Portfolio</title>
   </head>
   <body>
     <header>
       <!--Navbaren ska vara här med länkar till andra sidorna-->
-      <div class="topnavbar">
+      <div class="topnavbar" id="myTopnav">
         <a href="index.html">Startsidan</a>
         <a href="miniprojekt1.html">Miniprojekt 1</a>
         <a href="miniprojekt2.html">Miniprojekt 2</a>
@@ -93,76 +139,31 @@
         <a class="active" href="#">Om mig</a>
       </div>
     </header>
+
     <main>
-      <!--Responsiva bild galleri-->
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt1.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Cinque Terre"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc"><h3>Miniprojekt 1 information</h3></div>
+      <h1 class="rubrik1">Om Mig</h1>
+      <img
+        src="../bilder/scenery1.jpg"
+        alt="miniprojektet1"
+        class="miniprojekt1"
+        width="auto"
+        height="500"
+      />
+
+      <div class="keyframe"></div>
+
+      <div class="flex-container">
+        <div id="text1">
+          <p class="text-size">
+            Mitt namn är James och jag är en student i GritAcademy som läser
+            webbutvecklare inriktning e-handel. Jag tycker om design och att
+            utveckla hemsidor som är både statiska och dynamiska. På denna sidan
+            kan ni hitta mina senaste skapader projekter och intresse inom webb
+            utveckling/kodning.
+          </p>
         </div>
       </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt2.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Forest"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 2 information</div>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt3.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Northern Lights"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 3 information</div>
-        </div>
-      </div>
-
-      <div class="responsive">
-        <div class="gallery">
-          <a target="_blank" href="miniprojekt4.html">
-            <img
-              src="../bilder/osaka.jpeg"
-              alt="Mountains"
-              width="600"
-              height="400"
-            />
-          </a>
-          <div class="desc">Miniprojekt 4 information</div>
-        </div>
-      </div>
-
-      <div class="clearfix"></div>
     </main>
-
-    <div class="flex-container">
-      <div id="text1">
-        <p class="text-size">
-          Här går det att hitta alla sorters projekter och ytterligare mer
-          information om mig och andra framtida arbete
-        </p>
-        <a class="link" href="om-mig.html"><div class="button">Om Mig</div></a>
-      </div>
-    </div>
 
     <footer>
       <p id="footer-text">James Portfolio</p>
@@ -179,5 +180,15 @@
         /></a>
       </adress>
     </footer>
+    <script>
+      function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+          x.className += " responsive";
+        } else {
+          x.className = "topnav";
+        }
+      }
+    </script>
   </body>
 </html>
