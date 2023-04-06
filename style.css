@@ -89,7 +89,7 @@ body {
 }
 
 #bild1 {
-  background-image: url("../bilder/boka-bord.jpeg");
+  background-image: url("bilder/boka-bord.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 190px;
@@ -166,21 +166,21 @@ body {
 }
 
 #grid-bild1 {
-  background-image: url("../bilder/saiki.jpeg");
+  background-image: url("bilder/saiki.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
 }
 
 #grid-bild2 {
-  background-image: url("../bilder/fujitsu.jpeg");
+  background-image: url("bilder/fujitsu.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
 }
 
 #grid-bild3 {
-  background-image: url("../bilder/osaka.jpeg");
+  background-image: url("bilder/osaka.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 250px;
